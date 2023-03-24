@@ -1,0 +1,21 @@
+@import '../../styles/main.scss';
+
+.edit__page {
+  display: flex;
+  margin: 50px;
+  justify-content: center;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  min-width: 600px;
+  max-width: max-content;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}

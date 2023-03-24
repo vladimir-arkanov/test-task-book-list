@@ -1,0 +1,47 @@
+@import '../../styles/main.scss';
+
+.confirm{
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.5);
+
+  .confirm__content {
+    height: 50px;
+    width: max-content;
+    padding: 25px 45px;
+  
+    color: #000;
+    background-color: #ffffff;
+    border: solid #ffffff;
+    border-radius: 10px;
+  
+    transition: all 0.3s;
+    position: fixed;
+    z-index: 999;
+  }
+
+  &__title {
+    font-family: sans-serif;
+    padding-bottom: 10px;
+  }
+}
+
+.button__container {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: 100%;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}

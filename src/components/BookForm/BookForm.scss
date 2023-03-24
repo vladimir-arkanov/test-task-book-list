@@ -1,0 +1,17 @@
+@import '../../styles/main.scss';
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input__item {
+  position: relative;
+}
+
+.error__message {
+  position: absolute;
+  z-index: 1;
+  top: -19px;
+  color: #FF0000;
+}

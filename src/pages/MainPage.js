@@ -1,4 +1,4 @@
-import { BooksList } from '../components/BooksList';
+import { BooksList } from '../components/BooksList/BooksList';
 
 export const MainPage = ({books, setBooks}) => {
   return (

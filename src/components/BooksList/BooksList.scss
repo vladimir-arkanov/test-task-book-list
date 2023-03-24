@@ -1,0 +1,16 @@
+@import '../../styles/main.scss';
+
+.main__page {
+  max-width: 1200px;
+  padding: 50px;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form__wrapper {
+  margin-top: 50px;
+}

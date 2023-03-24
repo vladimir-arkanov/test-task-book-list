@@ -2,6 +2,7 @@
   "name": "test-task-book-list",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://vladimir-arkanov.github.io/test-task-book-list",
   "dependencies": {
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
@@ -19,8 +20,7 @@
     "sass": "^1.59.3",
     "web-vitals": "^2.1.4"
   },
-
-    "homepage": "https://vladimir-arkanov.github.io/test-task-book-list",
+  "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "react-router-dom"
+import { BookForm } from "./BookForm"
 
 export const BooksList = ({ books, setBooks }) => {
   const tableHeader = [{
@@ -8,27 +9,8 @@ export const BooksList = ({ books, setBooks }) => {
     author: 'Author'
   }]
 
-  const findBiggestIndex = () => {
-    return Math.max(...books.map(el => el.bookId)) + 1
-  }
-
   const deleteBook = (id) => {
     setBooks((oldBooks) => oldBooks.filter((book) => book.bookId !== id));
-  }
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-  
-    setBooks(oldBooks => {
-      const newBook = {
-        bookId: findBiggestIndex(oldBooks),
-        name: 'Kobzar',
-        year: 1840,
-        author: 'Taras Shevchenko',
-      }
-
-      return [...books, newBook]
-    })
   }
 
   return (
@@ -67,28 +49,9 @@ export const BooksList = ({ books, setBooks }) => {
           </tbody>
         </table>
       </div>
-
+          <BookForm isEdit={false} books={books} setBooks={setBooks}/>
       <div>
         <div>
-          <form
-            action=""
-            method="POST"
-            onSubmit={handleSubmit}
-          >
-            <input 
-              type='text'
-              placeholder='Enter a book name'
-            />
-            <input 
-              type='number'
-              placeholder="Enter a publish year"
-            />
-            <input 
-              type='text'
-              placeholder="Enter an Author"
-            />
-            <button>X</button>
-          </form>
         </div>
       </div>
     </div>

@@ -1,25 +1,20 @@
 export const booksFromServer = [
   {
     bookId: 1,
-    name: 'Kobzar',
-    year: 1840,
-    author: 'Taras Shevchenko',
+    name: 'Shadows of Forgotten Ancestors',
+    year: 1912,
+    author: 'Mykhailo Kotsiubynskyi',
   },
   {
     bookId: 2,
     name: 'Eneida',
-    year: 1791,
+    year: 1991,
     author: 'Ivan Kotliarevskyi',
   },
   {
     bookId: 3,
-    name: 'Forest Song',
-    year: 1912,
-    author: 'Lesya Ukrainka',
-  },{
-    bookId: 4,
-    name: 'Garden of Divine Songs',
-    year: 1861,
-    author: 'Hryhorii Skovoroda',
-  },
+    name: 'Perversion',
+    year: 1997,
+    author: 'Yuri Andrukhovych',
+  }
 ]

@@ -114,7 +114,7 @@ export const BookForm = memo(({
       />
 
       {inputYearError && (
-        <span>Publishe period 1900 - current</span>
+        <span>Publish period 1900 - current</span>
       )}
 
       <input

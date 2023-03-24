@@ -1,24 +1,24 @@
-import React from "react"
+import React, { useState } from "react"
 import { Link } from "react-router-dom"
 import { BookForm } from "./BookForm"
+import { ModalConfirm } from "./ModalConfirm"
 
 export const BooksList = ({ books, setBooks }) => {
+  const [isConfirm, setIsConfirm] = useState(false)
+  const [bookToDelete, setBookToDelete] = useState(null)
+  console.log(isConfirm)
+
   const tableHeader = [{
     name: 'Name',
     year: 'Published',
     author: 'Author'
   }]
 
-  const deleteBook = (id) => {
-    setBooks((oldBooks) => oldBooks.filter((book) => book.bookId !== id));
-  }
-
   return (
     <div>
       <div>
         <table>
           <thead>
-
             {tableHeader.map(el => {
               return (
                 <tr key={el.bookId}>
@@ -41,7 +41,7 @@ export const BooksList = ({ books, setBooks }) => {
                   <td>{book.author}</td>
                   <td>
                     <Link to={`${book.bookId}/edit`}>EDIT</Link>
-                    <button onClick={() => deleteBook(book.bookId)}>DELET</button>
+                    <button onClick={() =>{ setIsConfirm(true); setBookToDelete(book)}} >DELET</button>
                   </td>
                 </tr>
               )
@@ -54,6 +54,8 @@ export const BooksList = ({ books, setBooks }) => {
         <div>
         </div>
       </div>
+
+      {isConfirm && <ModalConfirm setIsConfirm={setIsConfirm} bookToDelete={bookToDelete} setBooks={setBooks}/>}
     </div>
   )
 }

@@ -18,7 +18,7 @@
 
 ###
 
-<p align="left">Here's the link to the demo of the project: [DEMO LINK](https://vladimir-arkanov.github.io/test-task-book-list/)</p>
+<a align="left">[DEMO LINK](https://vladimir-arkanov.github.io/test-task-book-list/)</a>
 
 ###
 

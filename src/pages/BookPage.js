@@ -1,7 +1,7 @@
 import { BookSpec } from "../components/BookSpec"
 
-export const BookPage = () => {
+export const BookPage = ({books}) => {
   return (
-    <BookSpec />
+    <BookSpec books={books} />
   )
 }

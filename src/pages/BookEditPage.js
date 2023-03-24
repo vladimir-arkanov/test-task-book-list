@@ -1,7 +1,7 @@
 import { BooksSpecEdit } from "../components/BooksSpecEdit"
 
-export const BookEditPage = () => {
+export const BookEditPage = ({books, setBooks}) => {
   return (
-    <BooksSpecEdit />
+    <BooksSpecEdit books={books} setBooks={setBooks} />
   )
 }

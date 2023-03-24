@@ -1,7 +1,7 @@
 import { BooksList } from '../components/BooksList';
 
-export const MainPage = () => {
+export const MainPage = ({books, setBooks}) => {
   return (
-   <BooksList />
+   <BooksList books={books} setBooks={setBooks}/>
   )
 };

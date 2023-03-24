@@ -1,7 +1,7 @@
 import { Button, CardContent, Typography } from "@mui/material";
 import Card from '@mui/material/Card';
 import React, { memo } from "react"
-import { Link, useParams, useNavigate, NavLink } from "react-router-dom"
+import { useParams, useNavigate, NavLink } from "react-router-dom"
 import './BookSpec'
 
 export const BookSpec = memo(({ books }) => {

@@ -1,5 +1,5 @@
 {
-  "homepage": "https://vladimir-arkanov.github.io/test-task-book-list",
+  "name": "test-task-book-list",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
